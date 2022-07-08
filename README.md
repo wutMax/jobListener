@@ -3,9 +3,9 @@ Listens for arrival and end of SLURM Jobs on a computer cluster.
 When a job arrives, or finish it sends a push notification using pushover.
 
 ## Instalation
-move jobListener.sh and push.sh to ~/bin/  
-`git clone github.com/maxcykiert/jobListener  
-cp -i jobListener.sh push.sh ~/bin/  
+move jobListener.sh and push.sh to ~/bin/   
+`git clone https://github.com/wutMax/jobListener  
+cp -i jobListener.sh push.sh ~/bin/   
 `
 
 The token and userID in push.sh need to be added.

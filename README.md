@@ -4,9 +4,10 @@ When a job arrives, or finish it sends a push notification using pushover.
 
 ## Instalation
 move jobListener.sh and push.sh to ~/bin/   
-`git clone https://github.com/wutMax/jobListener  
-cp -i jobListener.sh push.sh ~/bin/   
-`
+```
+    git clone https://github.com/wutMax/jobListener  
+    cp -i jobListener.sh push.sh ~/bin/   
+```
 
 The token and userID in push.sh need to be added.
 

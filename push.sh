@@ -2,8 +2,8 @@
 
 function push {
     if [ "$1" = "-h" ]; then
-    echo " Sends a request to the pushover.net server"
-    echo "Takes two positionnal arguments the title and the body of the push notification"
+        echo " Sends a request to the pushover.net server"
+        echo "Takes two positionnal arguments the title and the body of the push notification"
         return  
     fi
 

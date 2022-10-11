@@ -9,6 +9,8 @@ function push {
 
     CDIR="${XDG_CONFIG_HOME:-$HOME/.config}/push"
     mkdir -p "$CDIR"
+    [ ! -f "$CDIR/token" -o ! -f "$CDIR/user_id" ] && \
+        { echo "Auth tokens must be supplied."; return 1; }
 
     curl -s -F "token="$(<"$CDIR/token") \
     -F "user="$(<"$CDIR/user_id") \

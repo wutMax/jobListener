@@ -7,9 +7,11 @@ function push {
         return  
     fi
 
-    #requires COSTUMISATION
-    curl -s -F "token=TOKENNUMBER" \
-    -F "user=USERID" \
+    CDIR="${XDG_CONFIG_HOME:-$HOME/.config}/push"
+    mkdir -p "$CDIR"
+
+    curl -s -F "token="$(<"$CDIR/token") \
+    -F "user="$(<"$CDIR/user_id") \
     -F "title=$1" \
     -F "message=$2" https://api.pushover.net/1/messages.json >/dev/null
 }
